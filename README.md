@@ -1,7 +1,8 @@
 # UXID233-jbj49
 Zodiac Javascript Project
-Johanna Jarvis
+# Johanna Jarvis
 ## About
-hvdsavsuvfvekwefvwe
+You can call me Jo. 
 ## Topic
+
 ## AI use
