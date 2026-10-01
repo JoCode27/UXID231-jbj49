@@ -1,4 +1,3 @@
-# UXID231-jbj49
 # Johanna Jarvis
 ## About
 Hello everyone! You can call me Jo! I'm a Graphic Design senior finishing my minor with this class :] 
