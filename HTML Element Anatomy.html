@@ -1,0 +1,97 @@
+<!doctype html>
+<!--
+  ELEMENT ANATOMY — a read-along reference for Week 2.
+
+  Open this file in a browser AND in your editor side by side.
+  The comments (the grey <!~~ ... ~~>
+blocks) explain each concept. Comments never appear on the page; they are notes for the person
+reading the code. -->
+<html lang="en">
+	<!--
+    ^ The <html> element wraps the ENTIRE document.
+    It is the root of the tree. It has exactly two children:
+    <head> (below) and <body> (further down).
+
+    lang="en" is an ATTRIBUTE: extra info on the opening tag,
+    written as name="value". It declares the page is in English.
+  -->
+
+	<head>
+		<!--
+      <head> holds information ABOUT the page. The browser reads
+      it but never draws it on screen. Nothing here is visible.
+    -->
+		<meta charset="utf-8" />
+		<!--
+      ^ An EMPTY (void) element: no content, no closing tag.
+      You write the single tag and you're done.
+    -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<title>Element Anatomy — Week 2</title>
+		<!--
+      ^ <title> is a normal paired element: opening tag, content,
+      closing tag. It shows in the browser TAB, not on the page.
+    --></head>
+
+	<body>
+		<!--
+      <body> holds the content you SEE. Everything below appears
+      on the page. Notice how each element is indented one step
+      inside its parent — that indentation shows the nesting.
+    -->
+
+		<h1>The parts of an element</h1>
+
+		<p>This is a paragraph element.</p>
+		<!--
+      Anatomy of the paragraph above:
+        <p>   ......... the OPENING tag (names the element)
+        This is...   .. the CONTENT (the actual text)
+        </p>  ......... the CLOSING tag (slash before the name)
+      Everything between the tags belongs to the element.
+    -->
+
+		<h2>Tags come in pairs</h2>
+		<p>Most elements open and close. The closing tag carries the slash.</p>
+		<p>Forgetting a closing tag is the most common beginner bug.</p>
+
+		<h2>Some elements stand alone</h2>
+		<p>An image has no text content, so it has no closing tag:</p>
+		<img src="sparrow.jpg" alt="A house sparrow perched on a wire." />
+		<!--
+      ^ <img> is empty (void). Its information comes from
+      ATTRIBUTES, not from content between tags:
+        src = which image file to load
+        alt = a text description, for screen readers and for
+              when the image fails to load
+      Every <img> must have an alt attribute. Always.
+    -->
+
+		<h2>Elements nest</h2>
+		<section>
+			<!--
+        This <section> is a PARENT. The h3 and <ul> inside it are
+        its CHILDREN. Indent one step for each level of nesting.
+      -->
+			<h3>A nested list</h3>
+			<ul>
+				<li>Each list item is a child of the list.</li>
+				<li>The list is a child of the section.</li>
+				<li>The section is a child of the body.</li>
+			</ul>
+		</section>
+
+		<!--
+      The whole page is a tree:
+        html
+        |-- head  (title, meta — not shown)
+        \-- body  (everything you see)
+            |-- h1, p, h2 ...
+            \-- section
+                |-- h3
+                \-- ul
+                    |-- li
+                    |-- li
+                    \-- li
+    --></body>
+</html>
