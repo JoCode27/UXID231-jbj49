@@ -1,0 +1,27 @@
+
+body {
+    /* body selector 4 wholepage */
+    background-color: aqua;
+}
+
+
+h1 {
+color: green;
+}
+
+nav a {
+font-size: small;
+}
+
+main p {
+font-family: 'Courier New', Courier, monospace;
+}
+
+/*psuedo class*/
+nav a:hover {
+    color:red;
+}
+
+nav a:focus-visible {
+    outline: 2px solid blue;
+}
