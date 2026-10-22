@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johanna's Home Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header-footer">
+        <!-- Logo Header -->
+            <a href="index.html"> <img src="imgs/svgs/Insta_PFP.jpg" width="50" class="logo"> </a>
             <h1>JDesjgns</h1>
-             <p> Welcome to my portfolio!</p>
+            <img src="imgs/svgs/burger.svg" width="50">
     </header>
-    <nav aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-    </nav>
-             <main>
-            <div id="highlighted projects">
+     <main>
             <h2> Highlighted Projects</h2>
-
-             <p>
-            Here are my latest projects I have worked on. My work is mainly focused on Graphic Design and UX/UI Design.
-             </p>
-             <!-- learning I don't have to push everytime I want to see progress haha...
-              does this count as a nav? its linked imgs as portfolio directory...-->
+        <section class="Ensemble Arts Rebrand">
+             <h3>Ensemble Arts Typography Rebranding</h3>
+             <!-- asked chatgpt-->
+            <a href="ensemblearts.html">
+            <video width="300" autoplay muted loop> 
+             <source src="videos/TYPE3_FINAL_MOTIONyes copy 2.mp4" type="video/mp4"> 
+            </video> </a>
+            <p> Excitement through letters; Music through words.</p>
+            <ul>
+                <li><p class="category-button"> TYPOGRAPHY </p></li>
+                <li><p class="category-button"> BRANDING </p></li>
+            </ul>
+        </section>
             <a> <a href="typography.html"> <img src="imgs/edited imgs/typo-book-2.jpg" alt="typography link image" width="300"> </a>
-            
             <a> <a href="environmental.html"> <img src="imgs/edited imgs/enviro-2.jpg" alt="visual studies link image" width="300"> </a>
-
-             <!-- why is the header not registering?? oh it highlights red in the line below whats wrong-->
-            </div>
             
-            </main>
-     <footer>
-            <nav aria-label="Secondary">
-            <a href="#top">Back to Top</a>
-            </nav>
-            <p>2026 Johanna's Portfolio Site</p>
+     </main>
+     <footer class="header-footer">
+        <nav aria-label="Primary">
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="about.html">About</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+                <li> <a href="#top">Back to Top</a> </li>
+            </ul>
+        </nav>
+            <p>JDESJGNS @ 2026</p>
             <!-- can't replace existing external tabs to prevent spam because of noopener? 
             advice from chat))-->
             <a href="https://www.instagram.com/jdesjgns/" target="external" rel="noopener noreferrer">
